@@ -183,6 +183,11 @@
                                             <p class="card-text category-card-description" style="font-size: 13px;">
                                                 {{ $menu->description }}
                                             </p>
+                                            
+        <!-- Tombol ikon keranjang -->
+        <button onclick="alert('Tambah ke keranjang')" style="background: none; border: none; cursor: pointer; padding: 5px;">
+            <i class="fa fa-shopping-cart" style="color: #12544e; font-size: 20px;"></i>
+        </button>
                                         </div>
                                         <hr>
                                         <h5 class="fw-semibold">Rp.{{ $menu->price }}.000,00</h5>
@@ -195,5 +200,4 @@
             </div>
         </div>
     </section>
-
 </x-guest-layout>

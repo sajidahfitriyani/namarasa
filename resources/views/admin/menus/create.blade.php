@@ -99,15 +99,13 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-12">
-                                            <label for="juimagedul">Gambar: <span class="text-danger">*</span></label>
+                                            <label for="image">Gambar: <span class="text-danger">*</span></label>
                                             {{-- upload foto --}}
                                             <div class="input-group mb-3">
                                                 <div class="custom-file">
                                                     <input type="file" name="image" class="custom-file-input" id="image"
-                                                        aria-describedby="inputGroupFileAddon01" accept="image/*">>
-                                                    <label class="custom-file-label" for="inputGroupFile01">Pilih file
-                                                        gambar yang
-                                                        akan kamu upload ..</label>
+                                                        aria-describedby="inputGroupFileAddon01" accept="image/*">
+                                                    <label class="custom-file-label" for="inputGroupFile01">Choose File ..</label>
                                                 </div>
                                             </div>
                                         </div>

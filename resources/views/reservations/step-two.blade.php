@@ -14,9 +14,9 @@
                 shadow-lg
                 rounded-3
               ">
-                    <small>RESERVASI RESTAWRANT</small>
-                    <h1 class="fw-bold">Reservasi tempat meja di Restawrant</h1>
-                    <p>Pilih meja tempat anda reservasi tempat di Restawrant</p>
+                    <small>RESERVASI NAMARASA</small>
+                    <h1 class="fw-bold">Reservasi tempat meja di Namarasa</h1>
+                    <p>Pilih meja tempat anda reservasi tempat di Namarasa</p>
                     <hr />
                     <form method="POST" action="{{ route('reservations.store.step.two') }}" class="row g-3">
                         @csrf

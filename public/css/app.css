@@ -143,7 +143,7 @@ header {
 .btn-toggle:hover,
 .btn-toggle:focus {
     color: #ffffff;
-    background-color: #fcca29;
+    background-color: #7c5e38;
 }
 
 .btn-toggle::before {
@@ -173,7 +173,7 @@ header {
 
 .btn-toggle-nav a:hover,
 .btn-toggle-nav a:focus {
-    background-color: #c39603;
+    background-color: #7c5e38;
 }
 
 .menu-filter {
@@ -219,7 +219,7 @@ header {
 }
 
 footer {
-    background-color: #fcca29;
+    background-color: #7c5e38;
 }
 
 /* Custom Utility Styles */
@@ -242,15 +242,15 @@ footer {
 }
 
 .bg-warning {
-    background-color: #fcca29 !important;
+    background-color: #7c5e38 !important;
 }
 
 .text-warning {
-    color: #fcca29 !important;
+    color: #7c5e38 !important;
 }
 
 .btn-outline-warning {
-    border-color: #fcca29 !important;
+    border-color: #7c5e38 !important;
 }
 
 .btn-outline-warning:hover {
@@ -262,7 +262,7 @@ footer {
 }
 
 .btn-outline-light:hover {
-    color: #fcca29 !important;
+    color: #7c5e38 !important;
     background-color: #fff;
 }
 

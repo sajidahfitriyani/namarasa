@@ -7,7 +7,7 @@
                 <div class="container-fluid">
                     <div class="row">
                         <div class="col-md-8 p-5 my-auto align-center">
-                            <h1 class="display-5 fw-bold">Kategori Makanan & Minuman Restawrant</h1>
+                            <h1 class="display-5 fw-bold">Kategori Makanan & Minuman Namarasa</h1>
                             <p class="col-md-10">
                                 Cari kategori makanan dan minuman mu disini agar lebih mudah dicari, kalau udah ketemu
                                 tinggal tekan tombol selengkapnya

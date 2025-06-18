@@ -1,6 +1,6 @@
 @extends('layouts.backend.master')
 
-@section('title', 'Admin Dashboard — Restawrant')
+@section('title', 'Admin Dashboard — Namarasa')
 @section('content')
 
     @push('datatable-styles')

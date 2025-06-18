@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>Restawrant — Harga Kaki Lima Rasa Kaki Lima!</title>
+    <title>Namarasa — Restoran Indonesia Dengan Citarasa Nusantara dan Kopitiam Terbaik di PIK!</title>
 
-    <meta name="title" content="Restawrant — Harga Kaki Lima Rasa Kaki Lima!">
-    <meta name="description" content="  Restawrant adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
-                        dessert dan lain lain dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
-                        rame, jadi jangan lupa reservasi ya!">
+    <meta name="title" content="Namarasa — Restoran Indonesia Dengan Citarasa Nusantara dan Kopitiam Terbaik di PIK!">
+    <meta name="description" content=" Namarasa adalah kopitiam modern yang menyajikan ragam hidangan Nusantara autentik,
+    mulai dari makanan berat, camilan, hingga minuman spesial dengan cita rasa premium namun harga terjangkau.
+    Tempat kami selalu ramai pengunjung, jadi jangan lupa reservasi meja sebelumnya ya!">
     <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('cuba/assets/images/icon-192.png') }}" type="image/x-icon">
 
@@ -35,7 +35,7 @@
     <!-- ------------------------ Mobile Header Section ------------------------ -->
     <nav class="navbar navbar-light bg-white d-block d-sm-block d-md-block d-lg-none py-3 border-bottom">
         <div class="container-fluid">
-            <a class="navbar-brand fw-bold" href="#">🍣 Restawrant</a>
+            <a class="navbar-brand fw-bold" href="#">Namarasa</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
                 aria-controls="offcanvasNavbar">
                 <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
                 aria-labelledby="offcanvasNavbarLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title fw-bold" id="offcanvasNavbarLabel">
-                        🍣 Restawrant
+                        Namarasa
                     </h5>
                     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
                         aria-label="Close"></button>
@@ -122,7 +122,7 @@
     <header class="py-3 mb-4 border-bottom d-none d-sm-none d-md-none d-lg-block bg-white sticky-top">
         <div class="container d-flex flex-wrap justify-content-center">
             <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
-                <span class="fs-3 fw-bold">🍣 Restawrant</span>
+                <span class="fs-3 fw-bold">Namarasa</span>
             </a>
             <button class="btn btn-warning text-white me-2 px-5 fw-500"
                 onclick="location.href='http://127.0.0.1:8000/reservation/step-one'" type="button"> <i
@@ -141,11 +141,11 @@
         <div class="container">
             <div class="row text-white">
                 <div class="col-md-6 border-end">
-                    <h4 class="fw-bold">🍣 Restawrant — Harga kaki lima rasa bintang lima!</h4>
+                    <h4 class="fw-bold">Namarasa — Restoran Indonesia Dengan Citarasa Nusantara dan Kopitiam Terbaik di PIK!</h4>
                     <p class="">
-                        Restawrant adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
-                        dessert dan lain lain dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
-                        rame, jadi jangan lupa reservasi ya!
+                        Namarasa adalah kopitiam modern yang menyajikan ragam hidangan Nusantara autentik,
+                        mulai dari makanan berat, camilan, hingga minuman spesial dengan cita rasa premium namun harga terjangkau. 
+                        Tempat kami selalu ramai pengunjung, jadi jangan lupa reservasi meja sebelumnya ya!
                     </p>
                     <small class="d-block mb-3">
                         &copy; 2022 Syauqizaidan — Made with laravel 9.4.1 and bootstrap 5.2.0

@@ -5,15 +5,15 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="title" content="Restawrant —  Admin Management Dashboard">
-    <meta name="description" content="  Restawrant adalah restoran yang menyediakan berbagai macam kategori makanan mulai dari minuman,
-                        dessert dan lain lain dengan harga kaki lima namun rasanya bintang lima. Outlet kita selalu
-                        rame, jadi jangan lupa reservasi ya!">
-    <meta name="keywords" content="Restawrant, Open Source Restaurant Website">
-    <meta name="author" content="SYAUQIZAIDAN KHAIRAN KHALAF">
+    <meta name="title" content="Namarasa —  Admin Management Dashboard">
+    <meta name="description" content="Namarasa adalah kopitiam modern yang menyajikan ragam hidangan Nusantara autentik,
+    mulai dari makanan berat, camilan, hingga minuman spesial dengan cita rasa premium namun harga terjangkau.
+    Tempat kami selalu ramai pengunjung, jadi jangan lupa reservasi meja sebelumnya ya!">
+    <meta name="keywords" content="Namarasa, Open Source Restaurant Website">
+    <meta name="author" content="KELOMPOK 6">
     <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('cuba/assets/images/icon-192.png') }}" type="image/x-icon">
-    <title>Masuk Aplikasi - Restawrant</title>
+    <title>Masuk Aplikasi - Namarasa</title>
     @include('includes.backend.style')
 </head>
 

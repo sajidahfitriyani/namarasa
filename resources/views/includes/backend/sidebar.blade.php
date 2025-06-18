@@ -82,12 +82,12 @@
                 <li class="sidebar-list">
                     <a class="sidebar-link sidebar-title" href="#">
                         <i data-feather="users"></i>
-                        <span>Data Meja Restawrant</span>
+                        <span>Data Meja Namarasa</span>
                     </a>
                     <ul class="sidebar-submenu">
                         <li>
                             <a href="{{ url('/admin/tables') }}">
-                                Daftar Meja di Restawrant
+                                Daftar Meja di Namarasa
                             </a>
                         </li>
                         <li>

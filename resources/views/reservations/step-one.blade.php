@@ -14,9 +14,9 @@
                 shadow-lg
                 rounded-3
               ">
-                    <small>RESERVASI RESTAWRANT</small>
-                    <h1 class="fw-bold">Reservasi tempat meja di Restawrant</h1>
-                    <p>Isi form dibawah dengan benar untuk reservasi di Restawrant</p>
+                    <small>RESERVASI NAMARASA</small>
+                    <h1 class="fw-bold">Reservasi tempat meja di Namarasa</h1>
+                    <p>Isi form dibawah dengan benar untuk reservasi di Namarasa</p>
                     <hr />
                     <form method="POST" action="{{ route('reservations.store.step.one') }}" class="row g-3">
                         @csrf
@@ -40,7 +40,7 @@
                         <div class="col-md-12">
                             <label for="email_input" class="form-label">Email</label>
                             <input type="text" name="email" value="{{ $reservation->email ?? '' }}"
-                                placeholder="contoh : restawrant@example.com" class="form-control" id="email_input" />
+                                placeholder="contoh : namarasa@example.com" class="form-control" id="email_input" />
                             @error('email')
                                 <p class="register_text_error">{{ $message }}</p>
                             @enderror

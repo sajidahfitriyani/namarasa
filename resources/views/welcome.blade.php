@@ -413,7 +413,7 @@
     <!-- ------------------------ CTA Social Media Section ------------------------ -->
     <section>
         <div class="container mb-5">
-            <div class="row rounded mx-auto " style="background-color: #fcca29">
+            <div class="row rounded mx-auto " style="background-color: #7c5e38">
                 <div class="col-md-7 my-auto text-white px-5 py-5">
                     <h2 class="fw-bold text-white">Jangan lewatkan promo dari kami</h2>
                     <p>

@@ -1,3 +1,36 @@
 body{
     font-family: 'Plus Jakarta Sans', sans-serif;
 }
+
+/* Gaya untuk tombol keranjang */
+.btn-add-to-cart {
+    display: block !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    margin-top: 1rem !important;
+}
+
+.card-body {
+    position: relative;
+}
+
+.category-card-description-wrapper {
+    min-height: 60px;
+}
+
+/* Gaya untuk tombol keranjang di header */
+.header-cart-btn {
+    position: relative;
+}
+
+.header-cart-btn .cart-count {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background-color: #dc3545;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.75rem;
+    font-weight: bold;
+}

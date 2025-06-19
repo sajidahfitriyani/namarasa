@@ -183,12 +183,13 @@
                                                 {{ $menu->description }}
                                             </p>
                                         </div>
-                                                                                    <!-- Tombol ikon keranjang -->
-        <button onclick="alert('Tambah ke keranjang')" style="background: none; border: none; cursor: pointer; padding: 5px;">
-            <i class="fa fa-shopping-cart" style="color: #1f1810; font-size: 20px;"></i>
-        </button>
-                                        <hr>
-                                        <h5 class="fw-semibold">Rp.{{ $menu->price }}.000,00</h5>
+                                        <div class="d-flex justify-content-between align-items-center mb-3">
+                                            <h5 class="fw-semibold">Rp.{{ $menu->price }}.000,00</h5>
+                                            <button class="btn btn-warning text-white btn-add-to-cart" data-menu-id="{{ $menu->id }}">
+                                                <i class="fas fa-shopping-cart me-2"></i>
+                                                Tambah ke Keranjang
+                                            </button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -197,5 +198,101 @@
                 </div>
             </div>
         </div>
+    <script src="{{ url('js/cart.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <!-- Splide JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.2/dist/js/splide.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            new Splide('.splide', {
+                type: 'loop',
+                perPage: 1,
+                autoplay: true,
+                interval: 3000,
+                arrows: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+            }).mount();
+
+            new Splide('.splide2', {
+                type: 'loop',
+                perPage: 1,
+                autoplay: true,
+                interval: 3000,
+                arrows: false,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+            }).mount();
+        });
+    </script>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".menu-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+
+    <script>
+        var swiper = new Swiper(".testimonial-swiper", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            slidesPerGroup: 1,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 3,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 4,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
     </section>
 </x-guest-layout>

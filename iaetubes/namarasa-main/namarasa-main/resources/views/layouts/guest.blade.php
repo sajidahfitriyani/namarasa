@@ -124,10 +124,16 @@
             <a href="/" class="d-flex align-items-center mb-3 mb-lg-0 me-lg-auto text-dark text-decoration-none">
                 <span class="fs-3 fw-bold">Namarasa</span>
             </a>
-            <button class="btn btn-warning text-white me-2 px-5 fw-500"
-                onclick="location.href='http://127.0.0.1:8000/reservation/step-one'" type="button"> <i
-                    class="fas fa-calendar-plus"></i> &nbsp; &nbsp; Buat
-                Reservasi</button>
+            <div class="d-flex align-items-center gap-3">
+                <button class="btn btn-warning text-white px-5 fw-500" onclick="location.href='http://127.0.0.1:8000/reservation/step-one'" type="button">
+                    <i class="fas fa-calendar-plus me-2"></i>
+                    Buat Reservasi
+                </button>
+                <button class="btn btn-warning text-white px-4 fw-500" onclick="location.href='{{ url('/cart') }}'" type="button">
+                    <i class="fas fa-shopping-cart me-2"></i>
+                    Keranjang
+                </button>
+            </div>
         </div>
     </header>
 

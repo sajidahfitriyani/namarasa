@@ -22,6 +22,18 @@ Route::get('/reservation/step-two', [FrontendReservationController::class, 'step
 Route::post('/reservation/step-two', [FrontendReservationController::class, 'storeStepTwo'])->name('reservations.store.step.two');
 Route::get('/thankyou', [WelcomeController::class, 'thankyou'])->name('thankyou');
 
+Route::get('/', function () {
+    return view('welcome');
+});
+
+// Routes untuk keranjang
+Route::middleware(['auth'])->group(function () {
+    Route::get('/cart', [CartController::class, 'index'])->name('cart.index');
+    Route::post('/cart/{menu}', [CartController::class, 'add'])->name('cart.add');
+    Route::put('/cart/{id}', [CartController::class, 'update'])->name('cart.update');
+    Route::delete('/cart/{id}', [CartController::class, 'remove'])->name('cart.remove');
+});
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

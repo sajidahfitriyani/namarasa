@@ -89,6 +89,12 @@
                                             </div>
                                             <hr>
                                             <h5 class="fw-semibold">Rp.{{ $menu->price }}.000,00</h5>
+                                            <div class="mt-3">
+                                                <button class="btn btn-warning text-white btn-add-to-cart" data-menu-id="{{ $menu->id }}">
+                                                    <i class="fas fa-shopping-cart me-2"></i>
+                                                    Tambah ke Keranjang
+                                                </button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

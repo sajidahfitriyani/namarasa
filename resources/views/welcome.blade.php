@@ -224,8 +224,8 @@
                     text-center text-md-start text-lg-start
                     my-auto
                   ">
-                    <p class="mb-0 fw-bold text-warning">DIANTERIN KERUMAH</p>
-                    <h2 class="fw-bold">Cocok buat kalian yang suka rebahan dan males keluar</h2>
+                    <p class="mb-0 fw-bold text-warning">LANGSUNG KLIK, GAK PERLU ANTRE</p>
+                    <h2 class="fw-bold">Biar Gak Ngantri, Pesan Duluan Aja</h2>
                     <div class="row mt-4">
                         <div class="col-3 col-md-2 col-lg-3 mx-auto">
                             <div class="p-1 bg-warning rounded-logo text-center">
@@ -234,18 +234,18 @@
                         </div>
                         <div class="col-12 col-md-10 col-lg-9 mt-3 mt-md-0 mt-lg-0">
                             <h5 class="mb-1 fw-semibold">Pilih Menu</h5>
-                            <small>Pilih menu di aplikasi kami dan isi alamat dan data diri kamu</small>
+                            <small>Lihat menu di website, isi pesanan, tinggal datang pas udah siap.</small>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-3 col-md-2 col-lg-3 mx-auto">
                             <div class="p-1 bg-warning rounded-logo text-center">
-                                <i class="fas fa-motorcycle py-3" style="color: white; font-size:24px"></i>
+                                <i class="fas fa-utensils py-3" style="color: white; font-size:24px"></i>
                             </div>
                         </div>
                         <div class="col-12 col-md-10 col-lg-9 mt-3 mt-md-0 mt-lg-0">
-                            <h5 class="mb-1 fw-semibold">Makanan Dijalan</h5>
-                            <small>Tungguin makanan akan dianterin driver kami ke alamat kamu</small>
+                            <h5 class="mb-1 fw-semibold">Datang & Nikmati</h5>
+                            <small>Makan enak tanpa ribet, tinggal duduk atau ambil setelah nama kamu dipanggil.</small>
                         </div>
                     </div>
                 </div>

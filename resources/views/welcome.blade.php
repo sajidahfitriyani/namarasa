@@ -119,19 +119,19 @@
                     <div class="splide__track">
                         <div class="splide__list">
                             <div class="splide__slide" data-splide-interval="600">
-                                <img src="{{ url('storage/img/nm1.jpg') }}" class="img-fluid shadow-images"
+                                <img src="{{ asset('images/galeri/nm1.jpg') }}" class="img-fluid shadow-images"
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
                             </div>
                             <div class="splide__slide" data-splide-interval="600">
-                                <img src="{{ url('storage/img/nm4.jpg') }}" class="img-fluid shadow-images"
+                                <img src="{{ asset('images/galeri/nm4.jpg') }}" class="img-fluid shadow-images"
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
                             </div>
                             <div class="splide__slide" data-splide-interval="600">
-                                <img src="{{ url('storage/img/nm2.jpg') }}" class="img-fluid shadow-images"
+                                <img src="{{ asset('images/galeri/nm2.jpg') }}" class="img-fluid shadow-images"
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
                             </div>
                             <div class="splide__slide" data-splide-interval="600">
-                                <img src="{{ url('storage/img/nm5.jpg') }}" class="img-fluid shadow-images"
+                                <img src="{{ asset('images/galeri/nm5.jpg') }}" class="img-fluid shadow-images"
                                      style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
                             </div>
                         </div>
@@ -272,7 +272,7 @@
         </div>
     </section>
 
-  <!-- ------------------------ Gallery Pictures Section ------------------------ -->
+<!-- ------------------------ Gallery Pictures Section ------------------------ --> 
 <section class="my-100" id="galeri-outlet">
     <div class="container">
         <div class="text-center mb-5">
@@ -282,22 +282,23 @@
         </div>
         <div class="row">
             <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                <img src="{{ asset('storage/img/nm1.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 1" />
-                <img src="{{ asset('storage/img/nm2.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 2" />
+                <img src="{{ asset('images/galeri/nm1.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 1" />
+                <img src="{{ asset('images/galeri/nm2.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 2" />
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="{{ asset('storage/img/nm3.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 3" />
-                <img src="{{ asset('storage/img/nm4.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 4" />
+                <img src="{{ asset('images/galeri/nm3.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 3" />
+                <img src="{{ asset('images/galeri/nm4.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 4" />
             </div>
 
             <div class="col-lg-4 mb-4 mb-lg-0">
-                <img src="{{ asset('storage/img/nm5.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 5" />
-                <img src="{{ asset('storage/img/nm7.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 6" />
+                <img src="{{ asset('images/galeri/nm5.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 5" />
+                <img src="{{ asset('images/galeri/nm7.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 6" />
             </div>
         </div>
     </div>
 </section>
+
 
     <!-- ------------------------ Testimonials Section ------------------------ -->
     <section class="my-100">

@@ -240,7 +240,7 @@
                     <div class="row mt-4">
                         <div class="col-3 col-md-2 col-lg-3 mx-auto">
                             <div class="p-1 bg-warning rounded-logo text-center">
-                                <i class="fas fa-motorcycle py-3" style="color: white; font-size:24px"></i>
+                                <i class="fas fa-utensils py-3" style="color: white; font-size:24px"></i>
                             </div>
                         </div>
                         <div class="col-12 col-md-10 col-lg-9 mt-3 mt-md-0 mt-lg-0">

@@ -22,9 +22,7 @@ Route::get('/reservation/step-two', [FrontendReservationController::class, 'step
 Route::post('/reservation/step-two', [FrontendReservationController::class, 'storeStepTwo'])->name('reservations.store.step.two');
 Route::get('/thankyou', [WelcomeController::class, 'thankyou'])->name('thankyou');
 
-Route::get('/', function () {
-    return view('welcome');
-});
+
 
 // Routes untuk keranjang
 Route::middleware(['auth'])->group(function () {

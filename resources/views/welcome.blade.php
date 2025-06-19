@@ -314,9 +314,9 @@
     <section class="my-100">
         <div class="container">
             <div class="text-center mb-5">
-                <small class="text-warning fw-bold text-uppercase">Apa kata mereka tentang kami?</small>
-                <h1 class="fw-bold">Testimoni dari Para Pelanggan</h1>
-                <p>Biar kalian makin yakin buat ke tempat kami karena kata orang orang bagus dan kece dong</p>
+                <small class="text-warning fw-bold text-uppercase">Mereka Udah Coba, Kamu Kapan??</small>
+                <h1 class="fw-bold">Testimoni Seru dari Pengunjung</h1>
+                <p>Gak perlu mikir lama, nih bukti dari mereka yang udah ngerasain langsung ke-kece-an tempat ini!</p>
             </div>
             <div class="row">
                 <div class="container">
@@ -327,11 +327,11 @@
                                     <div class="card-body">
                                         <h5 class="card-title lh-lg">⭐⭐⭐⭐⭐</h5>
                                         <h5 class="card-title lh-lg fw-bold">
-                                            Tempat nyaman dan aman
+                                            Tempat cozy, pelayanan ramah!
                                         </h5>
                                         <p class="card-text mb-4">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum a eveniet
-                                            consectetur ipsum accusantium alias dignissimos
+                                            Bener-bener nyaman banget tempatnya! Staff-nya juga super ramah. Cocok banget buat
+                                            nongkrong santai atau kerja sambil ngopi.
                                         </p>
                                         <hr />
                                         <div class="row">
@@ -341,9 +341,9 @@
                                             </div>
                                             <div class="col-10 col-md-10 my-auto">
                                                 <p class="mb-0 fw-bold">
-                                                    Syauqizaidan Khairan Khalaf
+                                                    Abraham Salim
                                                 </p>
-                                                <small>Tukang tidur, 18 tahun</small>
+                                                <small>Pegawai Swasta, 27 tahun</small>
                                             </div>
                                         </div>
                                     </div>
@@ -354,11 +354,11 @@
                                     <div class="card-body">
                                         <h5 class="card-title lh-lg">⭐⭐⭐⭐⭐</h5>
                                         <h5 class="card-title lh-lg fw-bold">
-                                            Makanan Enak Banget Banget!
+                                            Makanannya juara banget!
                                         </h5>
                                         <p class="card-text mb-4">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum a eveniet
-                                            consectetur ipsum accusantium alias dignissimos
+                                            Rasa makanannya nagih parah. Porsinya pas, harga juga ramah di kantong. Apalagi bihun
+                                            kari ayamnya, enak banget!!!
                                         </p>
                                         <hr />
                                         <div class="row">
@@ -368,9 +368,9 @@
                                             </div>
                                             <div class="col-10 col-md-10 my-auto">
                                                 <p class="mb-0 fw-bold">
-                                                    Conrad Aditya Veranda
+                                                    Nona Bintang Manise
                                                 </p>
-                                                <small>Tukang genshin, 18 tahun</small>
+                                                <small>Food blogger, 30 tahun</small>
                                             </div>
                                         </div>
                                     </div>
@@ -381,11 +381,11 @@
                                     <div class="card-body">
                                         <h5 class="card-title lh-lg">⭐⭐⭐⭐⭐</h5>
                                         <h5 class="card-title lh-lg fw-bold">
-                                            Pegawai nya cantik dan ganteng
+                                            Pelayanannya super cepat dan ramah
                                         </h5>
                                         <p class="card-text mb-4">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum a eveniet
-                                            consectetur ipsum accusantium alias dignissimos
+                                            Baru duduk sebentar, pesanan udah dateng. Semua karyawan juga senyum terus, bikin
+                                            suasana makin nyaman.
                                         </p>
                                         <hr />
                                         <div class="row">
@@ -395,9 +395,9 @@
                                             </div>
                                             <div class="col-10 col-md-10 my-auto">
                                                 <p class="mb-0 fw-bold">
-                                                    Andhika Febriansyah
+                                                    Cahyadi Choi
                                                 </p>
-                                                <small>Tukang bucin, 18 tahun</small>
+                                                <small>Atlet Badminton, 25 tahun</small>
                                             </div>
                                         </div>
                                     </div>

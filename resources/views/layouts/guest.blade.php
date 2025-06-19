@@ -102,18 +102,18 @@
             </ul>
             <ul class="nav">
                 <li class="nav-item">
-                    <a class="nav-link link-dark text-grey px-2 no-effect-hover">Nomor Telepon</a>
+                    <a class="nav-link link-dark text-grey px-2 no-effect-hover">Contact Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link link-dark text-grey px-2 no-effect-hover">|</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://wa.me/+628123456789" class="nav-link link-dark text-grey px-2" target="_blank">
-                        +628123456789</a>
+                    <a href="https://wa.me/+6285718719077" class="nav-link link-dark text-grey px-2" target="_blank">
+                        Admin 1</a>
                 </li>
                 <li class="nav-item">
-                    <a href="https://wa.me/+628987654321" target="_blank"
-                        class="nav-link link-dark text-grey px-2">+628987654321</a>
+                    <a href="https://wa.me/+6289522054302" target="_blank"
+                        class="nav-link link-dark text-grey px-2">Admin 2</a>
                 </li>
             </ul>
         </div>
@@ -148,7 +148,7 @@
                         Tempat kami selalu ramai pengunjung, jadi jangan lupa reservasi meja sebelumnya ya!
                     </p>
                     <small class="d-block mb-3">
-                        &copy; 2022 Syauqizaidan — Made with laravel 9.4.1 and bootstrap 5.2.0
+                        &copy; 2025 — Made with laravel 9.4.1 and bootstrap 5.2.0
                     </small>
                 </div>
 
@@ -183,32 +183,24 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md">
-                    <h4 class="fw-bold mb-3">Sosial Media</h4>
+                    <h4 class="fw-bold mb-3">Sosial Media</h4> 
                     <ul class="list-unstyled">
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="#">
+                            <a class="link-light text-decoration-none" 
+                            href="https://wa.me/6285718719077" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
                                 <i class="fab fa-whatsapp"></i> &nbsp; Whatsapp
                             </a>
                         </li>
                         <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="#" target="_blank">
+                            <a class="link-light text-decoration-none" 
+                            href="https://www.instagram.com/namarasa_pik/" 
+                            target="_blank" 
+                            rel="noopener noreferrer">
                                 <i class="fab fa-instagram"></i> &nbsp; Instagram
                             </a>
                         </li>
-                        <li class="mb-1">
-                            <a class="link-light text-decoration-none" href="#" target="_blank">
-                                <i class="fab fa-twitter"></i> &nbsp;Twitter
-                            </a>
-                        </li>
-                        <li class="mb-5 mb-md-1">
-                            <a class="link-light text-decoration-none" href="#" target="_blank">
-                                <i class="fab fa-facebook-square"></i> &nbsp; Facebook
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
     </footer>
 
     <!-- Bootstrap JS -->

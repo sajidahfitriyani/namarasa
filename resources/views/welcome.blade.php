@@ -111,37 +111,35 @@
     </section>
 
     <!-- ------------------------ #1 Feature Section ------------------------ -->
-    <section class="my-100" id="tentang-kami">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-12 col-lg-7 mb-4 mb-lg-0 my-auto">
-                    <div class="splide splide2">
-                        <div class="splide__track">
-                            <div class="splide__list">
-                                <div class="splide__slide" data-splide-interval="600">
-                                    <img src="{{ url('images/landing-page/reservation-features-images.png') }}"
-                                        class="img-fluid shadow-images" />
-                                </div>
-                                <div class="splide__slide" data-splide-interval="600">
-                                    <img src="{{ url('images/landing-page/reservation-features-images-2.png') }}"
-                                        class="img-fluid shadow-images" />
-                                </div>
-                                <div class="splide__slide" data-splide-interval="600">
-                                    <img src="{{ url('images/landing-page/reservation-features-images-3.png') }}"
-                                        class="img-fluid shadow-images" />
-                                </div>
-                                <div class="splide__slide" data-splide-interval="600">
-                                    <img src="{{ url('images/landing-page/reservation-features-images-4.png') }}"
-                                        class="img-fluid shadow-images" />
-                                </div>
-                                <div class="splide__slide" data-splide-interval="600">
-                                    <img src="{{ url('images/landing-page/reservation-features-images-5.png') }}"
-                                        class="img-fluid shadow-images" />
-                                </div>
+<section class="my-100" id="tentang-kami">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-7 mb-4 mb-lg-0 my-auto">
+                <div class="splide splide2">
+                    <div class="splide__track">
+                        <div class="splide__list">
+                            <div class="splide__slide" data-splide-interval="600">
+                                <img src="{{ url('storage/img/nm1.jpg') }}" class="img-fluid shadow-images"
+                                     style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
+                            </div>
+                            <div class="splide__slide" data-splide-interval="600">
+                                <img src="{{ url('storage/img/nm4.jpg') }}" class="img-fluid shadow-images"
+                                     style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
+                            </div>
+                            <div class="splide__slide" data-splide-interval="600">
+                                <img src="{{ url('storage/img/nm2.jpg') }}" class="img-fluid shadow-images"
+                                     style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
+                            </div>
+                            <div class="splide__slide" data-splide-interval="600">
+                                <img src="{{ url('storage/img/nm5.jpg') }}" class="img-fluid shadow-images"
+                                     style="width: 100%; height: 320px; object-fit: cover; border-radius: 12px;" />
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+
+
 
                 <div
                     class="
@@ -274,41 +272,32 @@
         </div>
     </section>
 
-    <!-- ------------------------ Gallery Pictures Section ------------------------ -->
-    <section class="my-100" id="galeri-outlet">
-        <div class="container">
-            <div class="text-center mb-5">
-                <small class="text-warning fw-bold text-uppercase">Foto dan Dokumentasi di outlet kami</small>
-                <h1 class="fw-bold">Galeri & Dokumentasi di Outlet</h1>
-                <p>Buat kalian yang penasaran sama tempatnya kayak gimana tapi tempatnya nyaman kok hehe</p>
+  <!-- ------------------------ Gallery Pictures Section ------------------------ -->
+<section class="my-100" id="galeri-outlet">
+    <div class="container">
+        <div class="text-center mb-5">
+            <small class="text-warning fw-bold text-uppercase">Foto dan Dokumentasi di outlet kami</small>
+            <h1 class="fw-bold">Galeri & Dokumentasi</h1>
+            <p>Buat kalian yang penasaran sama tempatnya kayak gimana tapi tempatnya nyaman kok hehe</p>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
+                <img src="{{ asset('storage/img/nm1.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 1" />
+                <img src="{{ asset('storage/img/nm2.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 2" />
             </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                        class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
 
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain1.webp"
-                        class="w-100 shadow-1-strong rounded mb-4" alt="Wintry Mountain Landscape" />
-                </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="{{ asset('storage/img/nm3.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 3" />
+                <img src="{{ asset('storage/img/nm4.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 4" />
+            </div>
 
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain2.webp"
-                        class="w-100 shadow-1-strong rounded mb-4" alt="Mountains in the Clouds" />
-
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(73).webp"
-                        class="w-100 shadow-1-strong rounded mb-4" alt="Boat on Calm Water" />
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0">
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Horizontal/Nature/4-col/img%20(18).webp"
-                        class="w-100 shadow-1-strong rounded mb-4" alt="Waves at Sea" />
-
-                    <img src="https://mdbcdn.b-cdn.net/img/Photos/Vertical/mountain3.webp"
-                        class="w-100 shadow-1-strong rounded mb-4" alt="Yosemite National Park" />
-                </div>
+            <div class="col-lg-4 mb-4 mb-lg-0">
+                <img src="{{ asset('storage/img/nm5.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 5" />
+                <img src="{{ asset('storage/img/nm7.jpg') }}" class="w-100 shadow-1-strong rounded mb-4" alt="Foto 6" />
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ------------------------ Testimonials Section ------------------------ -->
     <section class="my-100">
@@ -411,24 +400,24 @@
     </section>
 
     <!-- ------------------------ CTA Social Media Section ------------------------ -->
-    <section>
-        <div class="container mb-5">
-            <div class="row rounded mx-auto " style="background-color: #7c5e38">
-                <div class="col-md-7 my-auto text-white px-5 py-5">
-                    <h2 class="fw-bold text-white">Jangan lewatkan promo dari kami</h2>
-                    <p>
-                        Pastikan kalian follow instagram dan twitter kami untuk informasi terkait promo, event, menu
-                        baru atau giveaway bagi kalian para restawvers di seluruh Indonesia!
-                    </p>
-                    <a href='#' target="_blank" class="btn btn-outline-light mt-2 px-4 py-2"
-                        style="font-weight:500;">Follow Instagram
-                        ⇾</a>
+            <section>
+                <div class="container mb-5">
+                    <div class="row rounded mx-auto" style="background-color: #7c5e38">
+                        <div class="col-md-7 my-auto text-white px-5 py-5">
+                            <h2 class="fw-bold text-white">Jangan lewatkan promo dari kami</h2>
+                            <p>
+                                Pastikan kalian follow instagram kami untuk informasi terkait promo, event, dan menu
+                                baru!
+                            </p>
+                            <a href="https://www.instagram.com/namarasa_pik/" target="_blank" class="btn btn-outline-light mt-2 px-4 py-2" style="font-weight:500;">
+                                Follow Instagram ⇾
+                            </a>
+                        </div>
+                        <div class="col-md-4 background-cta ms-auto">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4 background-cta ms-auto">
-                </div>
-            </div>
-        </div>
-    </section>
+            </section>
 
 
 </x-guest-layout>

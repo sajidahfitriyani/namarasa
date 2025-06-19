@@ -65,7 +65,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="1" />
                                                     <label class="form-check-label" for="1">
-                                                        Makanan
+                                                        Signature
                                                     </label>
                                                 </div>
                                             </a>
@@ -75,7 +75,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="2" />
                                                     <label class="form-check-label" for="2">
-                                                        Minuman
+                                                        Camilan
                                                     </label>
                                                 </div>
                                             </a>
@@ -85,7 +85,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="3" />
                                                     <label class="form-check-label" for="3">
-                                                        Dessert
+                                                        Coffee
                                                     </label>
                                                 </div>
                                             </a>
@@ -95,7 +95,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="4" />
                                                     <label class="form-check-label" for="4">
-                                                        Seblak
+                                                        Teas
                                                     </label>
                                                 </div>
                                             </a>
@@ -105,7 +105,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="5" />
                                                     <label class="form-check-label" for="5">
-                                                        Snack
+                                                        Refresher
                                                     </label>
                                                 </div>
                                             </a>
@@ -115,7 +115,7 @@
                                                 <div class="form-check">
                                                     <input class="form-check-input" type="checkbox" value="" id="6" />
                                                     <label class="form-check-label" for="6">
-                                                        Cocktail
+                                                        Classic Drinks
                                                     </label>
                                                 </div>
                                             </a>

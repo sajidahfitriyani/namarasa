@@ -16,39 +16,30 @@ class MenuController extends Controller
 
     public function cart()
     {
-        // Data dummy untuk keranjang
-        $cartItems = [
-            1 => [
-                'id' => 1,
-                'name' => 'Nasi Goreng Spesial',
-                'price' => 35000,
-                'quantity' => 2
-            ],
-            2 => [
-                'id' => 2,
-                'name' => 'Ayam Bakar Madu',
-                'price' => 45000,
-                'quantity' => 1
-            ],
-            3 => [
-                'id' => 3,
-                'name' => 'Es Teh Manis',
-                'price' => 5000,
-                'quantity' => 3
-            ]
-        ];
-
-        session(['cart' => $cartItems]);
+        $cartItems = session('cart', []);
+        // Debug: cek isi session
+        //dd($cartItems);
         return view('menus.cart', compact('cartItems'));
     }
+    
+public function addToCart($id)
+{
+    $menu = Menu::findOrFail($id);
+    $cart = session('cart', []);
 
-    public function removeFromCart($id)
-    {
-        $cart = session('cart', []);
-        if(isset($cart[$id])) {
-            unset($cart[$id]);
-            session(['cart' => $cart]);
-        }
-        return redirect()->back()->with('success', 'Menu berhasil dihapus dari keranjang');
+    if(isset($cart[$id])) {
+        $cart[$id]['quantity']++;
+    } else {
+        $cart[$id] = [
+            'id' => $menu->id,
+            'name' => $menu->name,
+            'price' => $menu->price,
+            'quantity' => 1
+        ];
     }
+
+    session(['cart' => $cart]);
+    return redirect()->route('cart.index')->with('success', 'Menu berhasil ditambahkan ke keranjang');
+}
+
 }

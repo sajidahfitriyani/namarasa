@@ -184,10 +184,13 @@
                                             </p>
                                         </div>
 
-                                                                                    <!-- Tombol ikon keranjang -->
-        <button onclick="alert('Tambah ke keranjang')" style="background: none; border: none; cursor: pointer; padding: 5px;">
-            <i class="fa fa-shopping-cart" style="color: #1f1810; font-size: 20px;"></i>
-        </button>
+                    {{-- Form tambah ke keranjang --}}     
+<form action="{{ route('cart.add', $menu->id) }}" method="POST" style="display:inline;">
+    @csrf
+    <button type="submit" title="Tambah ke Keranjang" class="action-btn">
+        <i class="fa fa-shopping-cart" style="color: #1f1810; font-size: 20px;"></i>
+    </button>
+</form>
                                         <hr>
                                         <h5 class="fw-semibold">Rp.{{ $menu->price }}.000,00</h5>
                                     </div>

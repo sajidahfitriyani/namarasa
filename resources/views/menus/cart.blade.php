@@ -66,11 +66,9 @@
                                                     </div>
                                                 </div>
                                             </td>
-                                            <td>Rp {{ number_format($item['price'], 0, ',', '.') }}</td>
-                                            <td>
-                                                {{ $item['quantity'] }}
-                                            </td>
-                                            <td>Rp {{ number_format($item['price'] * $item['quantity'], 0, ',', '.') }}</td>
+                                            <td>Rp.{{ $item['price'] }}.000,00</td>
+                                            <td>{{ $item['quantity'] }}</td>
+                                            <td>Rp.{{ $item['price'] * $item['quantity'] }}.000,00</td>
                                             <td>
                                                 <form action="{{ route('cart.remove', $id) }}" method="POST" class="d-inline">
                                                     @csrf
@@ -84,7 +82,9 @@
                                     @endforeach
                                     <tr>
                                         <td colspan="3" class="text-end fw-bold">Total:</td>
-                                        <td class="fw-bold">Rp {{ number_format($total, 0, ',', '.') }}</td>
+                                        <td class="fw-bold">
+                                            Rp.{{ $total }}.000,00
+                                        </td>
                                         <td></td>
                                     </tr>
                                 </tbody>

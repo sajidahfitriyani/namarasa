@@ -107,7 +107,7 @@
                                         <div class="row">
                                             <div class="col-md-6">
                                                 <h5>Detail Pembayaran</h5>
-                                                <p class="mb-0"><strong>Total Pesanan:</strong> Rp {{ number_format($total, 0, ',', '.') }}</p>
+                                                <p class="mb-0"><strong>Total Pesanan:</strong> Rp {{ number_format($total * 1000, 0, ',', '.') }}</p>
                                                 <p class="mb-0"><strong>Metode Pembayaran:</strong> Tunai</p>
                                                 <p><strong>Status:</strong> Menunggu Pembayaran</p>
                                             </div>
@@ -121,9 +121,9 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                        <button type="button" class="btn btn-success" onclick="alert('Terima kasih! Pesanan Anda akan segera diproses.')">
+                                        <button type="button" class="btn btn-success" id="pay-button">
                                             <i class="fas fa-check me-2"></i>
-                                            Konfirmasi Pembayaran
+                                            Bayar Dengan Midtrans
                                         </button>
                                     </div>
                                 </div>
@@ -151,4 +151,25 @@
         </div>
     </section>
 
+    <script src="https://app.sandbox.midtrans.com/snap/snap.js" data-client-key="{{ env('MIDTRANS_CLIENT_KEY') }}"></script>
+    <script>
+    document.getElementById('pay-button').onclick = function () {
+        fetch("{{ route('midtrans.token') }}", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+                "X-CSRF-TOKEN": "{{ csrf_token() }}"
+            },
+            body: JSON.stringify({ total: {{ $total * 1000 }} })
+        })
+        .then(response => response.json())
+        .then(data => {
+            window.snap.pay(data.token, {
+                onSuccess: function(result){ alert("Pembayaran berhasil!"); location.reload(); },
+                onPending: function(result){ alert("Menunggu pembayaran!"); },
+                onError: function(result){ alert("Pembayaran gagal!"); }
+            });
+        });
+    };
+    </script>
 </x-guest-layout>

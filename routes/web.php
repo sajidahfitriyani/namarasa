@@ -48,4 +48,6 @@ Route::middleware(['auth', 'admin'])->name('admin.')->prefix('admin')->group(fun
     Route::resource('/reservations', ReservationController::class);
 });
 
+Route::post('/midtrans/token', [\App\Http\Controllers\PaymentController::class, 'getSnapToken'])->name('midtrans.token');
+
 require __DIR__ . '/auth.php';

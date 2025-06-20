@@ -18,11 +18,18 @@ Route::get('/', [WelcomeController::class, 'index']);
 Route::get('/categories', [FrontendCategoryController::class, 'index'])->name('categories.index');
 Route::get('/categories/{category}', [FrontendCategoryController::class, 'show'])->name('categories.show');
 Route::get('/menus', [FrontendMenuController::class, 'index'])->name('menus.index');
+Route::get('/test', function () {
+    return [
+        'APP_BASE_PATH' => $_ENV['APP_BASE_PATH'] ?? null,
+        'dirname(__DIR__)' => dirname(__DIR__)
+    ];
+});
 
 // ROUTE CART PAKAI FRONTEND CONTROLLER
 Route::get('/cart', [FrontendMenuController::class, 'cart'])->name('cart.index');
 Route::post('/cart/add/{id}', [FrontendMenuController::class, 'addToCart'])->name('cart.add');
 Route::post('/cart/remove/{id}', [FrontendMenuController::class, 'removeFromCart'])->name('cart.remove');
+Route::post('/cart/update/{id}/{action}', [FrontendMenuController::class, 'updateQuantity'])->name('cart.update');
 Route::get('/reservation/step-one', [FrontendReservationController::class, 'stepOne'])->name('reservations.step.one');
 Route::post('/reservation/step-one', [FrontendReservationController::class, 'storeStepOne'])->name('reservations.store.step.one');
 Route::get('/reservation/step-two', [FrontendReservationController::class, 'stepTwo'])->name('reservations.step.two');

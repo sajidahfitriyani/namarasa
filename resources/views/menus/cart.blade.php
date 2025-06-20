@@ -4,19 +4,11 @@
     <section>
         <div class="container">
             <div class="mt-4 mb-3 bg-warning text-white rounded-3">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-8 p-5 my-auto align-center">
-                            <h1 class="display-5 fw-bold">Keranjang Belanja Anda</h1>
-                            <p class="col-md-10">
-                                Berikut adalah daftar menu yang telah Anda pilih untuk dipesan.
-                            </p>
-                        </div>
-                        <div class="col-md-4 my-auto p-0">
-                            <img src="{{ url('images/landing-page/shopping-cart.png') }}"
-                                class="img-fluid img-jumbotron d-none d-md-block" />
-                        </div>
-                    </div>
+                <div class="p-4">
+                    <h1 class="h2 mb-0">Keranjang Pesanan</h1>
+                    <p class="mb-0">
+                        Berikut adalah daftar menu yang telah Anda pilih untuk dipesan.
+                    </p>
                 </div>
             </div>
         </div>
@@ -53,27 +45,36 @@
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    @foreach($cartItems as $id => $item)
+                                    @foreach($cartItems as $key => $item)
                                         <tr>
                                             <td>
                                                 <div class="d-flex align-items-center">
-                                                    <img src="https://via.placeholder.com/50x50?text={{ substr($item['name'], 0, 2) }}" 
-                                                         alt="{{ $item['name'] }}" 
-                                                         class="img-thumbnail" 
-                                                         style="width: 50px; height: 50px; object-fit: cover;">
-                                                    <div class="ms-3">
-                                                        <h6 class="mb-0">{{ $item['name'] }}</h6>
-                                                    </div>
+                                                    <h6 class="mb-0">{{ $item['name'] }}</h6>
                                                 </div>
                                             </td>
                                             <td>Rp.{{ $item['price'] }}.000,00</td>
-                                            <td>{{ $item['quantity'] }}</td>
+                                            <td>
+                                                <div class="d-flex align-items-center">
+                                                    <form action="{{ route('cart.update', [$key, 'decrement']) }}" method="POST" class="d-inline">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-sm btn-outline-secondary me-2" {{ $item['quantity'] <= 1 ? 'disabled' : '' }}>
+                                                            <i class="fas fa-minus"></i>
+                                                        </button>
+                                                    </form>
+                                                    <span class="me-2">{{ $item['quantity'] }}</span>
+                                                    <form action="{{ route('cart.update', [$key, 'increment']) }}" method="POST" class="d-inline">
+                                                        @csrf
+                                                        <button type="submit" class="btn btn-sm btn-outline-secondary">
+                                                            <i class="fas fa-plus"></i>
+                                                        </button>
+                                                    </form>
+                                                </div>
+                                            </td>
                                             <td>Rp.{{ $item['price'] * $item['quantity'] }}.000,00</td>
                                             <td>
-                                                <form action="{{ route('cart.remove', $id) }}" method="POST" class="d-inline">
+                                                <form action="{{ route('cart.remove', $key) }}" method="POST" class="d-inline">
                                                     @csrf
-                                                    @method('DELETE')
-                                                    <button type="submit" class="btn btn-danger btn-sm">
+                                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus menu ini dari keranjang?')">
                                                         <i class="fas fa-trash"></i>
                                                     </button>
                                                 </form>
@@ -129,9 +130,12 @@
                             </div>
                         </div>
 
-                        <div class="text-end mt-3">
+                        <div class="d-flex justify-content-between mt-3">
+                            <a href="{{ route('menus.index') }}" class="btn btn-outline-success">
+                                <i class="fas fa-arrow-left me-2"></i>Kembali ke Menu
+                            </a>
                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#paymentModal">
-                                <i class="fas fa-money-bill-wave"></i> Lanjutkan Pembayaran
+                                <i class="fas fa-money-bill-wave me-2"></i>Lanjutkan Pembayaran
                             </button>
                         </div>
                     @else

@@ -117,6 +117,29 @@
                     </ul>
                 </li>
 
+                <li class="sidebar-main-title">
+                    <div>
+                        <h6>Kelola Pesanan</h6>
+                        <p>Data Pesanan & Pembayaran</p>
+                    </div>
+                </li>
+
+                <li class="sidebar-list">
+                    <a class="sidebar-link sidebar-title" href="#">
+                        <i data-feather="shopping-cart"></i>
+                        <span>Daftar Pesanan</span>
+                    </a>
+                    <ul class="sidebar-submenu">
+                        <li>
+                            <a href="{{ url('/admin/orders') }}">
+                                Semua Daftar Pesanan
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+
+
+
             </ul>
         </div>
         <div class="right-arrow" id="right-arrow"><i data-feather="arrow-right"></i></div>

@@ -108,12 +108,10 @@
                                             <div class="col-md-6">
                                                 <h5>Detail Pembayaran</h5>
                                                 <p class="mb-0"><strong>Total Pesanan:</strong> Rp {{ number_format($total * 1000, 0, ',', '.') }}</p>
-                                                <p class="mb-0"><strong>Metode Pembayaran:</strong> Tunai</p>
-                                                <p><strong>Status:</strong> Menunggu Pembayaran</p>
                                             </div>
                                             <div class="col-md-6">
                                                 <h5>Informasi Pembayaran</h5>
-                                                <p>Silakan membayar pesanan Anda ke kasir.</p>
+                                                <p>Silakan membayar pesanan Anda melaui midtrans.</p>
                                                 <p>Setelah pembayaran berhasil, pesanan Anda akan segera diproses.</p>
                                                 <p>Terima kasih atas pesanan Anda!</p>
                                             </div>
@@ -165,7 +163,30 @@
         .then(response => response.json())
         .then(data => {
             window.snap.pay(data.token, {
-                onSuccess: function(result){ alert("Pembayaran berhasil!"); location.reload(); },
+                onSuccess: function(result){
+                    // Call payment success handler
+                    fetch("{{ route('payment.success') }}", {
+                        method: "POST",
+                        headers: {
+                            "Content-Type": "application/json",
+                            "X-CSRF-TOKEN": "{{ csrf_token() }}"
+                        },
+                        body: JSON.stringify({
+                            order_id: data.order_id,
+                            transaction_status: result.transaction_status
+                        })
+                    })
+                    .then(response => {
+                        alert("Pembayaran berhasil!");
+                        // Redirect to home page after successful payment
+                        window.location.href = "{{ url('/') }}";
+                    })
+                    .catch(error => {
+                        console.error('Error:', error);
+                        alert("Pembayaran berhasil, tapi terjadi kesalahan saat menyimpan data!");
+                        window.location.href = "{{ url('/') }}";
+                    });
+                },
                 onPending: function(result){ alert("Menunggu pembayaran!"); },
                 onError: function(result){ alert("Pembayaran gagal!"); }
             });

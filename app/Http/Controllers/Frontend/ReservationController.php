@@ -66,6 +66,7 @@ class ReservationController extends Controller
         $reservation->save();
         $request->session()->forget('reservation');
 
-        return to_route('thankyou');
+        // Redirect to menus page instead of thankyou page
+        return to_route('menus.index');
     }
 }

@@ -30,38 +30,6 @@
         </div>
     </section>
 
-    <!-- ------------------------ Logo List Section ------------------------ -->
-    <section class="logo-list d-none d-sm-none d-md-none d-lg-block">
-        <div class="container py-2">
-            <div class="row">
-                <div class="col-lg-2 col-md-4 col-6">
-                    <a href="#"><img src="{{ url('images/logo/1.png') }}" class="img-fluid"
-                            alt="Bluehost logo" /></a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <a href="#"><img src="{{ url('images/logo/2.png') }}" class="img-fluid"
-                            alt="Hostgator logo" /></a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <a href="#"><img src="{{ url('images/logo/3.png') }}" class="img-fluid"
-                            alt="Green Geeks logo" /></a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <a href="#"><img src="{{ url('images/logo/4.png') }}" class="img-fluid"
-                            alt="WordPress logo" /></a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <a href="#"><img src="{{ url('images/logo/5.png') }}" class="img-fluid"
-                            alt="DreamHost logo" /></a>
-                </div>
-                <div class="col-lg-2 col-md-4 col-6">
-                    <a href="#"><img src="{{ url('images/logo/6.png') }}" class="img-fluid"
-                            alt="Hostinger logo" /></a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- ------------------------ Menu Card Section ------------------------ -->
     <section class="my-100">
         <div class="container">

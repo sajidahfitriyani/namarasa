@@ -2,9 +2,9 @@
 
 namespace App\Enums;
 
-enum TableLocation: string
+class TableLocation
 {
-    case Front = 'front';
-    case Inside = 'inside';
-    case Outside = 'outside';
+    public const Front = 'front';
+    public const Inside = 'inside';
+    public const Outside = 'outside';
 }

@@ -18,11 +18,11 @@
                     <div class="splide__track">
                         <ul class="splide__list">
                             <li class="splide__slide">
-                                <img src="{{ url('images/splide/admin/announcement-dashboard-images-2.png') }}"
+                                <img src="{{ url('images/splide/admin/NAVBAR (1).png') }}"
                                     class="d-block w-100" style="border-radius:8px;">
                             </li>
                             <li class="splide__slide">
-                                <img src="{{ url('images/splide/admin/announcement-dashboard-images-3.png') }}"
+                                <img src="{{ url('images/splide/admin/NAVBAR.png') }}"
                                     class="d-block w-100" style="border-radius:8px;">
                             </li>
                         </ul>

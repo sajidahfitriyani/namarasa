@@ -69,17 +69,17 @@
                         <div class="col-md-12">
                             <label for="jenis_kelamin_input" class="form-label">Jumlah Tamu</label>
                             <select name="guest_number" id="jenis_kelamin_input" class="form-select">
-                                <option selected>Jumlah Tamu ...</option>
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>
+                                <option value="" selected>Jumlah Tamu ...</option>
+                                <option value="1" {{ ($reservation->guest_number ?? '') == '1' ? 'selected' : '' }}>1</option>
+                                <option value="2" {{ ($reservation->guest_number ?? '') == '2' ? 'selected' : '' }}>2</option>
+                                <option value="3" {{ ($reservation->guest_number ?? '') == '3' ? 'selected' : '' }}>3</option>
+                                <option value="4" {{ ($reservation->guest_number ?? '') == '4' ? 'selected' : '' }}>4</option>
+                                <option value="5" {{ ($reservation->guest_number ?? '') == '5' ? 'selected' : '' }}>5</option>
+                                <option value="6" {{ ($reservation->guest_number ?? '') == '6' ? 'selected' : '' }}>6</option>
+                                <option value="7" {{ ($reservation->guest_number ?? '') == '7' ? 'selected' : '' }}>7</option>
+                                <option value="8" {{ ($reservation->guest_number ?? '') == '8' ? 'selected' : '' }}>8</option>
+                                <option value="9" {{ ($reservation->guest_number ?? '') == '9' ? 'selected' : '' }}>9</option>
+                                <option value="10" {{ ($reservation->guest_number ?? '') == '10' ? 'selected' : '' }}>10</option>
                             </select>
                             @error('guest_number')
                                 <p class="register_text_error">{{ $message }}</p>

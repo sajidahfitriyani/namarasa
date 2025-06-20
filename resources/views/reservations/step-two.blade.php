@@ -42,7 +42,7 @@
 
                         <div class="col-md-12 mx-auto mt-4 text-center">
                             <p class="text-center col-md-8 mx-auto">
-                                Dengan menekan tombol 'buat reservasi' berarti anda menyatakan setuju dan siap
+                                Dengan menekan tombol 'pesan menu' berarti anda menyatakan setuju dan siap
                                 bertanggung jawab atas reservasi yang anda telah buat
                             </p>
                             <a href="{{ route('reservations.step.one') }}"
@@ -50,7 +50,7 @@
                                 <i class="fas fa-arrow-left"></i> &nbsp; Sebelumnya
                             </a>
                             <button type="submit" class="btn btn-outline-light text-white px-5 py-2 fw-bold">
-                                Buat Reservasi &nbsp; <i class="fas fa-arrow-right"></i>
+                                Pesan Menu &nbsp; <i class="fas fa-arrow-right"></i>
                             </button>
                         </div>
                     </form>

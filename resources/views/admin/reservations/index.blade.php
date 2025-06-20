@@ -43,6 +43,7 @@
                                         <th>Tanggal</th>
                                         <th>Meja</th>
                                         <th>Jumlah Tamu</th>
+                                        <th>Pesanan</th>
                                         <th>Opsi</th>
                                     </tr>
                                 </thead>
@@ -72,6 +73,16 @@
                                             <td>{{ $item->res_date }}</td>
                                             <td>{{ $item->table->name }}</td>
                                             <td>{{ $item->guest_number }}</td>
+                                            <td>
+                                                @if($item->orders->count() > 0)
+                                                    <a href="{{ route('admin.reservations.show', $item->id) }}"
+                                                       class="btn btn-success btn-sm">
+                                                        <i class="fa fa-eye"></i> Lihat Pesanan
+                                                    </a>
+                                                @else
+                                                    <span class="badge badge-secondary">Belum ada pesanan</span>
+                                                @endif
+                                            </td>
                                             <td>
 
                                                 <a href="{{ route('admin.reservations.edit', $item->id) }}"
@@ -118,6 +129,7 @@
                                         <th>Tanggal</th>
                                         <th>Meja</th>
                                         <th>Jumlah Tamu</th>
+                                        <th>Pesanan</th>
                                         <th>Opsi</th>
                                     </tr>
                                 </tfoot>

@@ -10,7 +10,7 @@ class AdminController extends Controller
 {
     public function index()
     {
-        $reservations = Reservation::all();
+        $reservations = Reservation::with(['table', 'orders'])->get();
         return view('admin.index', compact('reservations'));
     }
 }

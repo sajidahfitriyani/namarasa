@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Enums\TableStatus;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ReservationStoreRequest;
+use App\Models\Order;
 use App\Models\Reservation;
 use App\Models\Table;
 use Carbon\Carbon;
@@ -19,7 +20,7 @@ class ReservationController extends Controller
      */
     public function index()
     {
-        $reservations = Reservation::all();
+        $reservations = Reservation::with(['table', 'orders'])->get();
         return view('admin.reservations.index', compact('reservations'));
     }
 
@@ -63,9 +64,10 @@ class ReservationController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Reservation $reservation)
     {
-        //
+        $reservation->load(['table', 'orders']);
+        return view('admin.reservations.show', compact('reservation'));
     }
 
     /**

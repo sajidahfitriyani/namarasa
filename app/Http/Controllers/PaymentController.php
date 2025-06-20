@@ -13,9 +13,11 @@ class PaymentController extends Controller
         \Midtrans\Config::$isSanitized = true;
         \Midtrans\Config::$is3ds = true;
 
+        $orderId = 'ORDER-' . uniqid();
+
         $params = [
             'transaction_details' => [
-                'order_id' => uniqid(),
+                'order_id' => $orderId,
                 'gross_amount' => $request->total, // pastikan sudah dalam satuan rupiah
             ],
             'customer_details' => [
@@ -25,6 +27,11 @@ class PaymentController extends Controller
         ];
 
         $snapToken = \Midtrans\Snap::getSnapToken($params);
-        return response()->json(['token' => $snapToken]);
+        return response()->json([
+            'token' => $snapToken,
+            'order_id' => $orderId
+        ]);
     }
+
+
 }

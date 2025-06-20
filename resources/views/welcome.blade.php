@@ -98,14 +98,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="container mt-4">
-                    <div class="row">
-                        <a href="{{ url('/menus') }}"
-                            class="btn btn-warning text-white px-4 mx-auto text-center col-10 col-md-3 my-3 fw-bold">Lihat
-                            Semua
-                            &nbsp; <i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>

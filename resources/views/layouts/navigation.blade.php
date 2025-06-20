@@ -25,6 +25,17 @@
 
             <!-- Settings Dropdown -->
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+                <!-- Cart Button -->
+                <a href="{{ route('cart.index') }}" class="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50">
+                    <i class="fas fa-shopping-cart mr-2"></i>
+                    @php
+                        $cartCount = session('cart') ? count(session('cart')) : 0;
+                    @endphp
+                    <span class="relative top-0 right-0 -mt-1 -mr-1 bg-yellow-500 text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
+                        {{ $cartCount }}
+                    </span>
+                </a>
+
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
                         <button

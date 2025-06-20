@@ -13,9 +13,9 @@
                                 pesan
                                 di restoran kami, scroll kebawah ya!
                             </p>
-                            <button class="btn btn-outline-light text-white px-4 fw-bold" type="button">
-                                Lihat semua &nbsp; <i class="fas fa-arrow-down"></i>
-                            </button>
+                            <a href="{{ route('cart.index') }}" class="btn btn-outline-light text-white px-4 fw-bold" type="button">
+                                Lihat Keranjang &nbsp; <i class="fas fa-shopping-cart"></i>
+                            </a>
                         </div>
                         <div class="col-md-4 my-auto p-0">
                             <img src="{{ url('images/landing-page/user-listing-images-removebg-preview-2.png') }}"
@@ -183,6 +183,7 @@
                                                 {{ $menu->description }}
                                             </p>
                                         </div>
+
                                                                                     <!-- Tombol ikon keranjang -->
         <button onclick="alert('Tambah ke keranjang')" style="background: none; border: none; cursor: pointer; padding: 5px;">
             <i class="fa fa-shopping-cart" style="color: #1f1810; font-size: 20px;"></i>

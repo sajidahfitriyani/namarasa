@@ -55,7 +55,7 @@
                                 <div class="col-sm-12">
                                     <div class="form-row">
                                         <div class="form-group col-md-6">
-                                            <label for="name">Nama Meja: <span class="text-danger">*</span></label>
+                                            <label for="name">Nama Meja : <span class="text-danger">*</span></label>
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1">
@@ -77,7 +77,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group col-md-6">
-                                            <label for="name">Jumlah Kursi: <span class="text-danger">*</span></label>
+                                            <label for="name">Jumlah Kursi : <span class="text-danger">*</span></label>
                                             <div class="input-group mb-3">
                                                 <div class="input-group-prepend">
                                                     <span class="input-group-text" id="basic-addon1">
@@ -102,10 +102,9 @@
                                             <label for="juimagedul">Status: <span class="text-danger">*</span></label>
                                             {{-- upload foto --}}
                                             <div class="mt-1">
-                                                <select id="categories" name="status" class="custom-select">
+                                                <select name="status" class="custom-select">
                                                     @foreach (App\Enums\TableStatus::cases() as $status)
-                                                        <option value="{{ $status->value }}">{{ $status->name }}
-                                                        </option>
+                                                        <option value="{{ $status->value }}">{{ $status->name }}</option>
                                                     @endforeach
                                                 </select>
 
@@ -113,13 +112,11 @@
                                         </div>
 
                                         <div class="form-group col-md-6">
-                                            <label for="juimagedul">Posisi Meja: <span
-                                                    class="text-danger">*</span></label>
+                                            <label for="juimagedul">Posisi Meja: <span class="text-danger">*</span></label>
                                             <div class="mt-1">
                                                 <select id="categories" name="location" class="custom-select">
                                                     @foreach (App\Enums\TableLocation::cases() as $location)
-                                                        <option value="{{ $location->value }}">{{ $location->name }}
-                                                        </option>
+                                                        <option value="{{ $location->value }}">{{ $location->name }}</option>
                                                     @endforeach
                                                 </select>
                                             </div>

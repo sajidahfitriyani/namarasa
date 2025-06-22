@@ -2,9 +2,9 @@
 
 namespace App\Enums;
 
-class TableStatus
+enum TableStatus: string
 {
-    public const Pending = 'pending';
-    public const Avalaiable = 'avaliable';
-    public const Unavaliable = 'unavaliable';
+    case Pending = 'pending';
+    case Avalaiable = 'avaliable';
+    case Unavaliable = 'unavaliable';
 }

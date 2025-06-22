@@ -96,7 +96,7 @@
                         <div class="modal fade" id="paymentModal" tabindex="-1" aria-labelledby="paymentModalLabel" aria-hidden="true">
                             <div class="modal-dialog modal-lg">
                                 <div class="modal-content">
-                                    <div class="modal-header bg-success text-white">
+                                    <div class="modal-header" style="background-color: #0f3029; color: #fff;">
                                         <h5 class="modal-title" id="paymentModalLabel">
                                             <i class="fas fa-money-bill-wave me-2"></i>
                                             Pembayaran Pesanan
@@ -119,7 +119,7 @@
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Tutup</button>
-                                        <button type="button" class="btn btn-success" id="pay-button">
+                                        <button type="button" class="btn" style="background-color: #0f3029; color: #fff;" id="pay-button">
                                             <i class="fas fa-check me-2"></i>
                                             Bayar Dengan Midtrans
                                         </button>
@@ -129,7 +129,7 @@
                         </div>
 
                         <div class="d-flex justify-content-between mt-3">
-                            <a href="{{ route('menus.index') }}" class="btn btn-outline-success">
+                            <a href="{{ route('menus.index') }}" class="btn" style="color: #0f3029; border: 1px solid #0f3029;">
                                 <i class="fas fa-arrow-left me-2"></i>Kembali ke Menu
                             </a>
                             <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#paymentModal">

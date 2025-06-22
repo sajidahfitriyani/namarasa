@@ -300,3 +300,21 @@ footer {
     border-radius: 12px;
     background-color: #fff;
 }
+
+.bg-success, .btn-success {
+    background-color: #0f3029 !important;
+    border-color: #0f3029 !important;
+}
+
+.text-success {
+    color: #0f3029 !important;
+}
+
+.btn-outline-success {
+    color: #0f3029 !important;
+    border-color: #0f3029 !important;
+}
+.btn-outline-success:hover {
+    background-color: #0f3029 !important;
+    color: #fff !important;
+}

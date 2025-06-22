@@ -49,7 +49,7 @@
                             </h4>
                             <p>
                                 <span>
-                                    Selamat datang di halaman administrator Restawrant, disini anda dapat menambah menu,
+                                    Selamat datang di halaman administrator Namarasa, disini anda dapat menambah menu,
                                     kategori, meja dan menambah reservasi.
                                 </span>
                             </p>

@@ -219,7 +219,7 @@
                     mb-lg-0
                     overlay-container
                   ">
-                    <img src="{{ url('images/landing-page/video.png') }}"
+                    <img src="{{ url('images/landing-page/buatdilandingpage.png') }}"
                         class="img-fluid shadow-images img-video" />
                     <!-- The overlay area -->
                     <div class="container__overlay">

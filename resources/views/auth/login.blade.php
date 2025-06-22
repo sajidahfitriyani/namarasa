@@ -10,9 +10,9 @@
     mulai dari makanan berat, camilan, hingga minuman spesial dengan cita rasa premium namun harga terjangkau.
     Tempat kami selalu ramai pengunjung, jadi jangan lupa reservasi meja sebelumnya ya!">
     <meta name="keywords" content="Namarasa, Open Source Restaurant Website">
-    <meta name="author" content="KELOMPOK 6">
-    <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
-    <link rel="shortcut icon" href="{{ url('cuba/assets/images/icon-192.png') }}" type="image/x-icon">
+    <meta name="author" content="KELOMPOK 4">
+    <link rel="icon" href="{{ url('cuba/assets/images/rasanama.ico') }}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ url('cuba/assets/images/rasanama.png') }}" type="image/x-icon">
     <title>Masuk Aplikasi - Namarasa</title>
     @include('includes.backend.style')
 </head>
@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-7">
-                <img class="bg-img-cover bg-center" src="{{ url('cuba/assets/images/login/login.jpg') }}"
+                <img class="bg-img-cover bg-center" src="{{ url('cuba/assets/images/login/loginn.png') }}"
                     alt="looginpage">
             </div>
             <div class="col-xl-5 p-0">

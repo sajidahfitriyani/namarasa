@@ -12,7 +12,7 @@
     <meta name="description" content=" Namarasa adalah kopitiam modern yang menyajikan ragam hidangan Nusantara autentik,
     mulai dari makanan berat, camilan, hingga minuman spesial dengan cita rasa premium namun harga terjangkau.
     Tempat kami selalu ramai pengunjung, jadi jangan lupa reservasi meja sebelumnya ya!">
-    <link rel="icon" href="{{ url('cuba/assets/images/favicon.ico') }}" type="image/x-icon">
+    <link rel="icon" href="{{ url('cuba/assets/images/rasanama.ico') }}" type="image/x-icon">
     <link rel="shortcut icon" href="{{ url('cuba/assets/images/icon-192.png') }}" type="image/x-icon">
 
     <!-- Fonts -->

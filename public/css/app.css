@@ -23,6 +23,8 @@ html:focus-within {
 
 body {
     font-family: "Plus Jakarta Display", sans-serif;
+    color: #0f3029;
+    background-color: #fff;
 }
 
 header {
@@ -37,6 +39,10 @@ header {
 
 .text-grey {
     color: #808080 !important;
+}
+
+.text-dark, .text-body {
+    color: #0f3029 !important;
 }
 
 .logo-list {
@@ -114,6 +120,7 @@ header {
 
 .category-card-description {
     -webkit-line-clamp: 3;
+    line-clamp: 3;
 }
 
 .category-card-description-wrapper {
@@ -222,10 +229,30 @@ footer {
     background-color: #7c5e38;
 }
 
+.btn-warning, .bg-warning {
+    background-color: #7c5e38 !important;
+    border-color: #7c5e38 !important;
+    color: #fff !important;
+}
+
+.btn-custom-brown,
+.bg-custom-brown {
+    background-color: #7c5e38 !important;
+    border-color: #7c5e38 !important;
+    color: #fff !important;
+}
+.btn-custom-brown:hover,
+.bg-custom-brown:hover {
+    background-color: #6b4f2e !important;
+    border-color: #6b4f2e !important;
+}
+
 /* Custom Utility Styles */
 
 .fs-12 {
     font-size: 12px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .fs-15 {
@@ -236,12 +263,17 @@ footer {
     font-weight: 500;
 }
 
-.my-100 {
-    margin-top: 100px;
-    margin-bottom: 100px;
+.bg-warning {
+    background-color: #7c5e38 !important;
 }
 
-.bg-warning {
+.btn-outline-warning {
+    border-color: #7c5e38 !important;
+    color: #7c5e38 !important;
+}
+
+.btn-outline-warning:hover {
+    color: white;
     background-color: #7c5e38 !important;
 }
 
@@ -249,28 +281,22 @@ footer {
     color: #7c5e38 !important;
 }
 
-.btn-outline-warning {
-    border-color: #7c5e38 !important;
-}
-
-.btn-outline-warning:hover {
-    color: white;
-}
-
 .no-effect-hover:hover {
+    background-color: #fff;
     color: #808080 !important;
 }
 
 .btn-outline-light:hover {
-    color: #7c5e38 !important;
-    background-color: #fff;
-}
-
-.rounded-logo {
     border-radius: 12px;
+    color: #7c5e38 !important;
 }
 
 .section-margin {
     margin-top: 7rem !important;
     margin-bottom: 7rem !important;
+}
+
+.rounded-logo {
+    border-radius: 12px;
+    background-color: #fff;
 }

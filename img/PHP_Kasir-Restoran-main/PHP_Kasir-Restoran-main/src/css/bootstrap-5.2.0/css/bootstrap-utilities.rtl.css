@@ -79,7 +79,7 @@
 }
 
 .link-warning {
-  color: #ffc107 !important;
+  color: #7c5e38 !important;
 }
 .link-warning:hover, .link-warning:focus {
   color: #ffcd39 !important;
@@ -100,7 +100,7 @@
 }
 
 .link-dark {
-  color: #212529 !important;
+  color: #0f3029 !important;
 }
 .link-dark:hover, .link-dark:focus {
   color: #1a1e21 !important;

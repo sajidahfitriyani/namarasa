@@ -21,7 +21,7 @@
     <div class="container-fluid">
         <div class="row">
             <div class="col-xl-7">
-                <img class="bg-img-cover bg-center" src="{{ url('cuba/assets/images/login/loginn.png') }}"
+                <img class="bg-img-cover bg-center" src="{{ url('cuba/assets/images/login/loginn.jpg') }}"
                     alt="looginpage">
             </div>
             <div class="col-xl-5 p-0">

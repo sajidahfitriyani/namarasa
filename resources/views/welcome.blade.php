@@ -143,7 +143,7 @@
         <div class="container">
             <div class="text-center mb-5">
                 <small class="text-warning fw-bold text-uppercase">Kategori Makanan Yang Tersedia di
-                    Restawrant</small>
+                    Namarasa PIK</small>
                 <h1 class="fw-bold">Kategori Makanan & Minuman</h1>
                 <p>Mau cari minuman, makanan, dessert atau oleh oleh ada kategorinya nih</p>
             </div>
